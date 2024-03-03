@@ -1,0 +1,270 @@
+/*.destacados {
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 330vh;
+}
+*/
+
+
+
+
+.destacados-presentacion {
+    height: 650px; /* 300px */
+    /*max-height: 700px;
+    overflow: auto;*/
+    background: linear-gradient(#FFFF66, #00CC00); /*Para efecto*/
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.destacados-presentacion__titulo {
+    color: var(--fuente-ceniza-oscuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.slider{
+    width: 400px;
+    height: 240px;
+    max-width: 100vw;
+    margin:auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position:relative; /*absolute*/
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width:400px; /*1300px*/
+    max-width: 100vw;
+    height: 100%;
+    object-fit:contain;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color:yellow;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color:yellow;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color:yellow;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+
+
+/*   Lista proyectos   */
+
+.diferenciales { 
+    background: linear-gradient(#FFFF66, #00CC00); /*Para efecto*/
+    /*background-color: var(--background-azul-medio);*/
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+}
+
+.diferenciales__lista {
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    /*justify-content: space-evenly;*/
+}
+
+.titulo-principal{
+    color: var(--fuente-ceniza-oscuro);
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2em;
+    /*margin: 0 0 1em;*/
+    clear:left;
+}
+
+.items {
+    max-width: 350px;
+    /*box-sizing: border-box;*/
+    padding: 0.15rem 0.15rem 0.15rem 0.15rem;
+    /*background-repeat: no-repeat;*/
+    /*background-position: top 1.25rem left 2.5rem;*/
+}
+
+.items {
+    color:black;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-justify: auto;
+}
+
+.items {
+    line-height: normal;
+}
+
+.items:before{
+    content: "\2B9A";
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    max-width: 600px;
+    display: block; /* Asegura que la imagen sea un elemento en bloque */
+    margin: 0 auto; /* Centrar horizontalmente la imagen */
+    box-shadow: 0 2px 10px 5px #00000020;
+    margin-bottom: .5rem;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1024px){
+    
+
+    .destacados-presentacion {
+        height: 300px;
+        padding-top: 1rem;
+        padding-bottom: 1rem; /* 3 rem */
+        /*padding: auto;*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content:flex-end
+    }
+
+    .destacados-presentacion__titulo {
+        width: 1600px;
+        color: var(--fuente-ceniza-oscuro);
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-family: var(--montserrat);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        padding-bottom: 1.5rem;
+        display: block;
+        margin: auto;
+        float:none
+        /*flex-direction: column;
+        flex-wrap: wrap;
+        align-self:flex-start;
+        align-items: flex-start;*/
+    }
+
+    .slider {
+        width: 400px; /*400px*/
+        height: 240px;
+        max-width: 100vw;
+        margin: auto;
+        position:relative; /* relative */
+        overflow: hidden;
+    }
+    
+    .slider .list {
+        position: absolute;
+        width: max-content;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        transition: 1s;
+        overflow-x: hidden;
+    }
+    
+    .slider .list img {
+        width: 400px;
+        max-width: 100%;
+        height: 100%;
+        object-fit:contain; /*cover*/
+    }
+    
+    .slider .list > * {
+        flex-shrink: 0; /* Evita que los elementos se ajusten */
+    }
+    
+    .slider .list > * + * {
+        margin-left: 0; /* Elimina cualquier espacio entre las imágenes */
+    }
+
+ /*   Lista proyectos responsive   */
+   
+ .diferenciales {
+    background-color: var(--background-ceniza-claro);
+    overflow: auto; /* Para contener correctamente los elementos flotantes */
+}
+
+.diferenciales__lista {
+    padding-right: 10rem;
+    display: block; /* Asegura que la imagen sea un elemento en bloque */
+    margin: 0 auto; /* Centrar horizontalmente la imagen */
+    float:left;
+    justify-content: space-around;
+}
+
+.items {
+    font-size: 0.8rem;
+    text-align:left;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-justify: auto;
+}
+    
+}
