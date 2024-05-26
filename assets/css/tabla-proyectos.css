@@ -1,0 +1,130 @@
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.heading {
+    display: flex;
+    background-color: #232f3e;
+    box-shadow: 0px 1px 2px #232f3e;
+
+}
+h1 {
+    color:green;
+    font-weight: bold;
+    
+    background: transparent;
+    padding: 7px;
+    
+}
+
+/*
+.bitacora {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente los elementos dentro de la sección
+}
+*/
+
+
+.bitacora-titulo {
+    color: var(--fuente-ceniza-oscuro);
+    font-size: 24px;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin: 0 0 1em;
+    clear:left;
+    padding-top: 1rem;
+}
+
+label {
+    flex: 1; /* Expande el espacio disponible para el label */
+    text-align: left; /* Alinea el texto del label a la derecha */
+    margin-right: 10px; /* Espacio entre el label y el campo de entrada */
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 40%; /* El campo de entrada ocupará el 50% del ancho de su contenedor (la sección) */
+}
+    
+
+select {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla */
+.outer-wrapper {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+    max-width: fit-content;
+    max-height: fit-content;
+
+    
+}
+.table-wrapper {
+
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: fit-content;
+    max-height: 66.4vh;
+    
+    margin-top: 22px;
+    
+    margin: 15px;
+    padding-bottom: 20px;
+    
+}
+
+
+table {
+    
+    min-width: max-content;
+    
+    border-collapse: separate;
+    border-spacing: 0px;    
+    
+}
+
+
+
+table th{
+    position: sticky; 
+    top: 0px;
+    
+    background-color:green;
+    color:lime;
+    
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    outline: 0.7px solid black;
+    border: 1.5px solid black;
+
+} 
+
+
+
+table th, table td {
+    
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+table td {
+    text-align: left;
+    
+    font-size: 13px;
+    border: 1px solid rgb(177, 177, 177);
+    padding-left: 20px;
+    
+}

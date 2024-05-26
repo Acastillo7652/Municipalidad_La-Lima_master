@@ -1,0 +1,145 @@
+.diferenciales { 
+    /*background: linear-gradient(#FFFF66, #00CC00);*/ /*Para efecto*/
+    /*background-color: var(--background-azul-medio);*/
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.diferenciales__lista {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    /*justify-content: space-evenly;*/
+}
+
+.titulo-principal{
+    color: var(--fuente-ceniza-oscuro);
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2em;
+    /*margin: 0 0 1em;*/
+    clear:left;
+}
+
+.items {
+    max-width: 350px;
+    /*box-sizing: border-box;*/
+    padding: 0.15rem 0.15rem 0.15rem 0.15rem;
+    /*background-repeat: no-repeat;*/
+    /*background-position: top 1.25rem left 2.5rem;*/
+}
+
+.items {
+    color: var(--fuente-ceniza-oscuro);
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-justify: auto;
+}
+
+.items {
+    line-height: normal;
+}
+
+.items:before{
+    content:"★"
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    max-width: 600px;
+    display: block; /* Asegura que la imagen sea un elemento en bloque */
+    margin: 0 auto; /* Centrar horizontalmente la imagen */
+    box-shadow: 0 2px 10px 5px #00000020;
+    margin-bottom: .5rem;
+}
+
+/*.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+*/
+
+
+/*
+
+.diferenciales__item-reloj {
+    background-image: url(../img/icono-reloj.png);
+}
+
+.diferenciales__item-dinero {
+    background-image: url(../img/icono-dinero.png);
+}
+
+.diferenciales__item-quimica {
+    background-image: url(../img/icono-quimica.png);
+}
+
+*/
+
+/*
+
+.diferenciales{
+    padding: 3em 0;
+}
+
+.diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.diferenciales__lista{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+*/
+
+@media screen and (min-width: 1024px) {
+    .diferenciales {
+        background-color: var(--background-ceniza-claro);
+        overflow: auto; /* Para contener correctamente los elementos flotantes */
+    }
+    
+    .diferenciales__lista {
+        padding-left: 3rem;
+        display: block; /* Asegura que la imagen sea un elemento en bloque */
+        margin: 0 auto; /* Centrar horizontalmente la imagen */
+        float:left;
+        justify-content: space-around;
+    }
+
+    .items {
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+        text-justify: auto;
+    }
+
+    .imagen-diferenciales {
+        display: flex;
+        /*flex-direction: column;*/
+        align-items:center;
+        float:inline-end;
+        max-width: 760px;
+        display: block; /* Asegura que la imagen sea un elemento en bloque */
+        margin: 0 auto; /* Centrar horizontalmente la imagen */
+        width: 100%;
+    }
+        
+}

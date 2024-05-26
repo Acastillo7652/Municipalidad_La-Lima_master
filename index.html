@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Home | Municipalidad La Lima, Cortés</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="assets/css/reset.css" rel="stylesheet">
+        <link href="assets/css/bases.css" rel="stylesheet">
+        <link href="assets/css/head.css" rel="stylesheet">
+        <link href="assets/css/llamada.css" rel="stylesheet">
+        <link href="assets/css/principal.css" rel="stylesheet">
+        <link href="assets/css/destacados.css" rel="stylesheet">
+        <link href="assets/css/demo.css" rel="stylesheet">
+        <link href="assets/css/footer.css" rel="stylesheet">
+        <link rel="icon" href="assets/img/logo.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="head container">
+
+            <img class="head__logo" src="assets/img/dos-logos.png" alt="Logo Emblema Alcaldía">
+
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+            </div>
+        
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../Municipalidad_La-Lima_master/ventanas/tabla-proyectos.html">Proyectos</a></li>
+                    <li><a href="../Municipalidad_La-Lima_master/ventanas/conoce.html">Conócenos</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScq3Hj6Pwv0Ax3FWxnOce-JNkunoPxk72OMjrvUnosqYg5uPA/viewform?usp=sf_link" tabindex="blank" rel="noopener">Pago Facíl</a></li>
+                </ul>
+            </div>
+            
+            <!--
+            <nav class="head__navegacion">
+                <ul>
+                    <li class="head__enlace"><a href="#servicios">Nuestros Servicios</a></li>
+                    <li class="head__enlace"><a href="#estamosHaciendo">Qué estamos Haciendo</a></li>
+                    <li class="head__enlace"><a href="#footer">Contacto</a></li>
+                    <li class="head__enlace"><a href="../ventanas/login.html">Bitácora</a></li>
+                </ul>
+            </nav>
+            -->
+
+        </header>
+        <main>
+
+            <section class="llamada container" id="llamada">
+                <h1 class="llamada__titulo">Municipalidad de La Lima, Cortés</h1>
+                <p class="llamada__texto">¡En la Ciudad del Oro Verde!</p>
+                <!--<a class="llamada__boton boton" href="#">Conozca los planes</a>-->
+            </section>
+
+
+            <section class="principal container" id="principal">
+                <h2 class="principal__titulo">¡Trabajando en cada Sector de nuestra Lima!</h2>
+
+                <div class="relative w-full max-w-6xl overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="slider">
+                      <div class="slide min-w-full p-4">
+                        <div class="card bg-white rounded-lg shadow-lg p-4">
+                          <img src="assets/img/P1.jpg" alt="Bazar Tech" class="rounded-t-lg" />
+                          <h2 class="text-yellow-500 text-xl font-bold mt-2">BAZAR TECH</h2>
+                          <p class="text-zinc-700">¡Atención emprendedores Te...</p>
+                          <button class="custom-button bg-yellow-400 text-white rounded">Leer Más</button>
+                        </div>
+                      </div>
+                
+                      <div class="slide min-w-full p-4">
+                        <div class="card bg-white rounded-lg shadow-lg p-4">
+                          <img src="assets/img/P2.jpg" alt="Noche del Sabor" class="rounded-t-lg" />
+                          <h2 class="text-yellow-500 text-xl font-bold mt-2">NOCHE DEL SABOR</h2>
+                          <p class="text-zinc-700">¡El evento más esperado del a...</p>
+                          <button class="custom-button bg-yellow-400 text-white rounded">Leer Más</button>
+                        </div>
+                      </div>
+                
+                      <div class="slide min-w-full p-4">
+                        <div class="card bg-white rounded-lg shadow-lg p-4">
+                          <img src="assets/img/P3.jpg" alt="Jazz en el Museo" class="rounded-t-lg" />
+                          <h2 class="text-yellow-500 text-xl font-bold mt-2">JAZZ EN EL MUSEO</h2>
+                          <p class="text-zinc-700">El proyecto UREMU y museos...</p>
+                          <button class="custom-button bg-yellow-400 text-white rounded">Leer Más</button>
+                        </div>
+                      </div>
+                
+                      <div class="slide min-w-full p-4">
+                        <div class="card bg-white rounded-lg shadow-lg p-4">
+                          <img src="assets/img/P4.jpg" alt="Algo que Decir" class="rounded-t-lg" />
+                          <h2 class="text-yellow-500 text-xl font-bold mt-2">ALGO QUE DECIR</h2>
+                          <p class="text-zinc-700">¡Atención, amantes del arte y ...</p>
+                          <button class="custom-button bg-yellow-400 text-white rounded">Leer Más</button>
+                        </div>
+                      </div>
+                
+                      <div class="slide min-w-full p-4">
+                        <div class="card bg-white rounded-lg shadow-lg p-4">
+                          <img src="assets/img/P5.jpg" alt="Placeholder" class="rounded-t-lg" />
+                          <h2 class="text-yellow-500 text-xl font-bold mt-2">EVENTO 5</h2>
+                          <p class="text-zinc-700">Descripción del evento 5...</p>
+                          <button class="custom-button bg-yellow-400 text-white rounded">Leer Más</button>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="controls">
+                      <button id="prev" class="nav-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                      </button>
+                      <div class="dots">
+                        <button class="dot" data-slide="0"></button>
+                        <button class="dot" data-slide="1"></button>
+                        <button class="dot" data-slide="2"></button>
+                        <button class="dot" data-slide="3"></button>
+                        <button class="dot" data-slide="4"></button>
+                      </div>
+                      <button id="next" class="nav-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+            </section>
+
+            <section class="demo container">
+                <h2 class="demo__titulo">¡Bienvenidos al Municipio de La Lima!</h2>
+                <div class="demo__contenido">
+                    <div class="demo__informaciones">
+                    <video src="assets/img/video_lima.mp4" class="demo__video" controls></video>
+                </div>
+            </section>
+
+            <section class="destacados-presentacion container" id="estamosHaciendo">
+                <h2 class="destacados-presentacion__titulo">Proyectos Realizados</h2>
+
+                <div class="outer-wrapper">
+                  <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <th>ID del Proyecto</th>
+                          <th>Nombre del Proyecto</th>
+                          <th>Descripción</th>
+                          <th>Departamento Responsable</th>
+                          <th>Fecha de Inicio</th>
+                          <th>Fecha de Finalización</th>
+                          <th>Estado</th>
+                          <th>Presupuesto Asignado</th>
+                          <th>Gasto Real</th>
+                          <th>Fuente de Financiación</th>
+                          <th>Ubicación</th>
+                          <th>Beneficiarios</th>
+                          <th>Indicadores de Desempeño</th>
+                          <th>Contratistas/Proveedores</th>
+                          <th>Impacto Esperado</th>
+                          <th>Riesgos Identificados</th>
+                          <th>Mitigación de Riesgos</th>
+                          <th>Comentarios/Notas</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>001</td>
+                        <td>Construcción de Escuela</td>
+                        <td>Proyecto para construir una nueva escuela primaria en la comunidad.</td>
+                        <td>Educación</td>
+                        <td>2023-01-10</td>
+                        <td>2023-12-20</td>
+                        <td>En progreso</td>
+                        <td>$500,000</td>
+                        <td>$200,000</td>
+                        <td>Presupuesto Estatal</td>
+                        <td>Ciudad Capital</td>
+                        <td>Niños en edad escolar</td>
+                        <td>Progreso de construcción, matrícula escolar</td>
+                        <td>Constructora ABC</td>
+                        <td>Mejora en la educación</td>
+                        <td>Retrasos en suministro</td>
+                        <td>Contratos de proveedores alternativos</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Rehabilitación de Carretera</td>
+                        <td>Reparación y mantenimiento de la carretera principal que conecta dos ciudades.</td>
+                        <td>Infraestructura</td>
+                        <td>2022-06-15</td>
+                        <td>2023-05-30</td>
+                        <td>Completado</td>
+                        <td>$1,200,000</td>
+                        <td>$1,180,000</td>
+                        <td>Préstamo del Banco Mundial</td>
+                        <td>Ruta Nacional 45</td>
+                        <td>Conductores y transportistas</td>
+                        <td>Reducción de accidentes, tiempo de viaje</td>
+                        <td>Constructora XYZ</td>
+                        <td>Mejora en el transporte y comercio</td>
+                        <td>Condiciones climáticas adversas</td>
+                        <td>Planificación de contingencias climáticas</td>
+                        <td>Proyecto finalizado exitosamente</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Instalación de Paneles Solares</td>
+                        <td>Iniciativa para instalar paneles solares en edificios gubernamentales.</td>
+                        <td>Energía</td>
+                        <td>2023-03-01</td>
+                        <td>2024-02-28</td>
+                        <td>En progreso</td>
+                        <td>$800,000</td>
+                        <td>$350,000</td>
+                        <td>Fondos de la Unión Europea</td>
+                        <td>Varios edificios en la ciudad</td>
+                        <td>Empleados gubernamentales, reducción de costos</td>
+                        <td>Generación de energía, reducción de CO2</td>
+                        <td>Proveedor SolarTech</td>
+                        <td>Reducción de costos energéticos y huella de carbono</td>
+                        <td>Problemas técnicos iniciales</td>
+                        <td>Capacitación técnica adicional</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Centro de Salud Comunitario</td>
+                        <td>Construcción de un nuevo centro de salud para mejorar los servicios médicos locales.</td>
+                        <td>Salud</td>
+                        <td>2023-05-10</td>
+                        <td>2024-06-15</td>
+                        <td>Planeado</td>
+                        <td>$900,000</td>
+                        <td>$50,000</td>
+                        <td>Donaciones privadas</td>
+                        <td>Comunidad Rural</td>
+                        <td>Residentes locales</td>
+                        <td>Número de consultas médicas, satisfacción de pacientes</td>
+                        <td>Constructora Salud</td>
+                        <td>Mejora en la salud pública</td>
+                        <td>Falta de financiamiento completo</td>
+                        <td>Campañas de recaudación de fondos</td>
+                        <td>Inicio pendiente de financiamiento</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      </tbody>
+                  </table>
+              </div>
+              </div>
+
+              <div class="button-animated">
+                <button class="animated-button"><span>Todos los Proyectos...</span></button>
+              </div>
+              
+            </section>
+
+            <footer class="footer container" id="footer">
+                <img src="assets/img/logo-blanco.png" alt="Logo Blanco Emblema Alcaldía" class="footer__logo">
+                <ul class="footer__social">
+                    <li><a href="#" class="footer__midia"><img src="assets/img/facebook.png" alt="Ícono de Facebook"></a></li>
+                    <li><a href="#" class="footer__midia"><img src="assets/img/youtube.png" alt="Ícono de Instagram"></a></li>
+                    <li><a href="#" class="footer__midia"><img src="assets/img/correo.png" alt="Ícono de Twitter"></a></li>
+                </ul>
+                <nav>
+                    <ul class="footer__navegacion">
+                        <li class="head__enlace"><a href="#llamada">Home</a></li>
+                        <li class="head__enlace"><a href="../Municipalidad_La-Lima_master/ventanas/conoce.html">Conócenos</a></li>
+                        <li class="head__enlace"><a href="https://docs.google.com/forms/d/e/1FAIpQLScq3Hj6Pwv0Ax3FWxnOce-JNkunoPxk72OMjrvUnosqYg5uPA/viewform?usp=sf_link" tabindex="blank" rel="noopener">Pago Facíl</a></li>
+                    </ul>
+                </nav>
+                <p class="creador">© 2024 Municipalidad de La Lima. Todos los derechos reservados.
+                </p>
+            </footer>
+        </main>
+
+        <script src="assets/js/home.js"></script>
+        <!--<script src="assets/js/slider.js"></script>-->
+        <script src="assets/js/principal.js"></script>
+    </body>
+</html>

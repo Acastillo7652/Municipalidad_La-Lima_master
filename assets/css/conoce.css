@@ -1,0 +1,87 @@
+
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+
+.conoce {
+    height:auto; /*modificado*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente los elementos dentro de la sección */
+}
+
+/* la tabla 
+
+.conoce-titulo {
+    color: var(--fuente-ceniza-oscuro);
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 2em;
+    /*margin: 0 0 1em;
+    clear:left;
+}
+*/
+
+/* Section párrafo */
+
+.parrafo {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+/* FORMULARIO PANTALLAS PC 
+
+@media screen and (min-width: 1024px){
+    /* Hace que el contenedor del formulario sea responsive 
+iframe[src*="google.com/forms"] {
+    width: 100%;
+    height: 100vh; /* Ajusta la altura al 100% del viewport 
+    border: none; /* Elimina el borde del iframe 
+}
+
+/* Ajusta el tamaño del formulario dentro del contenedor 
+.google-form-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ajusta el tamaño de los elementos del formulario para que sean responsive 
+.google-form-container .freebirdFormviewerViewFormContent {
+    max-width: 100%; /* Ajusta el ancho máximo del formulario 
+}
+
+/* Ajusta el tamaño de los campos de entrada de texto 
+.google-form-container .quantumWizTextinputPaperinputInput {
+    width: 100%; /* Ajusta el ancho al 100% 
+
+/* Ajusta el tamaño de los botones de envío 
+.google-form-container .freebirdFormviewerViewNavigationSubmitButton {
+    width: 100%; /* Ajusta el ancho al 100% 
+    max-width: 100%; /* Ajusta el ancho máximo al 100% 
+}
+
+    
+}
+

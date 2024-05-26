@@ -1,0 +1,195 @@
+.principal {
+    font-family: Arial, sans-serif;
+    background: linear-gradient( #00CC00,#FFFF66);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/ /* ESTO ES PARA QUE SE VISUALICE EN TODO SU SECTION */
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    /*margin: 0; */
+
+    
+    /*height: 300px; /* 300px */
+    /*max-height: 700px;
+    overflow: auto;
+    background: linear-gradient( #00CC00,#FFFF66); /*Para efecto
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: flex;
+    flex-direction: column;
+    */
+}
+
+.principal__titulo {
+    color: var(--fuente-ceniza-oscuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    background:limegreen;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 600px; /*600*/
+    height: 400px;
+    text-align: center;
+  }
+
+  .slide img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .nav-button {
+    background-color:#00CC00; /* rgba(0, 0, 0, 0.5) */
+    color: white;
+    padding: 0.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .nav-button:hover {
+    background-color:green;
+    transform: scale(1.1);
+  }
+
+  .nav-button svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .custom-button {
+    margin-top: 0.5rem; /* Adjusted margin-top to make space for the dots */
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem; /* Adjusted font size */
+  }
+
+  .controls {
+    position: absolute;
+    bottom: 2.5rem; /*0.5rem*/ /* Adjusted bottom to move dots below the button */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Add some space between the buttons and the dots */
+  }
+
+  .dots {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  @media screen and (min-width: 768px){
+    #slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+    
+      .slide {
+        background:limegreen;
+        /*min-width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease-in-out;
+      }
+    
+      .card {
+        width: 100%;
+        max-width: 600px; /*600*/
+        height: 500px;
+        text-align: center;
+      }
+    
+      .slide img {
+        max-height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+    
+      .nav-button {
+        background-color:limegreen; /* rgba(0, 0, 0, 0.5) */
+        color: white;
+        padding: 0.25rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+    
+      .nav-button:hover {
+        background-color:green;
+        transform: scale(1.1);
+      }
+    
+      .nav-button svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    
+      .dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    
+      .dot.active {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    
+      .custom-button {
+        margin-top: 0.5rem; /* Adjusted margin-top to make space for the dots */
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem; /* Adjusted font size */
+      }
+    
+      .controls {
+        position: absolute;
+        bottom: 2.5rem; /*0.5rem*/ /* Adjusted bottom to move dots below the button */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 1rem; /* Add some space between the buttons and the dots */
+      }
+    
+      .dots {
+        display: flex;
+        gap: 0.5rem;
+      }
+}
