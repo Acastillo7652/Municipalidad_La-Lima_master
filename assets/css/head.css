@@ -24,6 +24,7 @@
 }
 
 .head__navegacion {
+    color: #04f839;
     text-align:center;
     padding-top: 2.5rem;
 }
@@ -143,7 +144,7 @@
 }
 
 #menu li:hover{
-    letter-spacing: 4px;
+    letter-spacing: 5px; /*4px*/
 }
 
 #menu li a{
