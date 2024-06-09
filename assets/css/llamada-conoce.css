@@ -3,10 +3,10 @@
     flex-direction: column;
     align-items: center;
 
-    color:yellow;
+    background: rgba(175, 149, 34, 0.925);
     text-align: center;
     
-    background-color:rgba(189, 183, 107, 0.753);
+    /*background: linear-gradient(#fdd832, #ffff66ea); /*:rgba(189, 183, 107, 0.753);*/
 
     padding-top: 13rem; /* 16.25rem */
     padding-bottom: 1.5rem;
@@ -14,7 +14,7 @@
 
 .llamada__titulo {
     font-family: var(--montserrat);
-    color:green;
+    color:gold;
     font-size: 2.25rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -25,7 +25,7 @@
 
 .llamada__texto {
     font-size: 1.85rem;
-    color:green;
+    color:gold;
     line-height: normal;
    
     margin-top: 1rem;
