@@ -61,6 +61,7 @@ select {
     margin: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    background: lime;
     border: 1px solid black;
     border-radius: 4px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
@@ -75,6 +76,7 @@ select {
     overflow-x: scroll;
     height: fit-content;
     max-height: 66.4vh;
+    background: white;
     
     margin-top: 22px;
     

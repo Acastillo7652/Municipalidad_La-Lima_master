@@ -100,7 +100,8 @@
 
   .controls {
     position: absolute;
-    bottom: 2.5rem; /*0.5rem*/ /* Adjusted bottom to move dots below the button */
+    padding-top: 0.1rem; /*MODIFICADO ULTIMO*/
+    bottom: 1.3rem; /*0.5rem*/ /* Adjusted bottom to move dots below the button */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
