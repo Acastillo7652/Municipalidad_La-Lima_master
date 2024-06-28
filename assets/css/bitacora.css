@@ -100,7 +100,7 @@ tbody tr td:nth-child(6) {
 }
 
 tbody tr td:nth-child(7) {
-    color:darkorange;
+    color:orangered;
     background-color:darkgrey;
     font-weight: bold; 
 }
