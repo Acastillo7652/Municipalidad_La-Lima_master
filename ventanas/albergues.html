@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Control de Albergues </title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="../assets/css/reset.css" rel="stylesheet">
+        <link href="../assets/css/head.css" rel="stylesheet">
+        <link href="../assets/css/llamada-albergues.css" rel="stylesheet">
+        <link href="../assets/css/bitacora.css" rel="stylesheet">
+        <link href="../assets/css/bases.css" rel="stylesheet">
+        <link href="../assets/css/normalize.css" rel="stylesheet">
+        <link href="../assets/css/footer.css" rel="stylesheet">
+    </head>
+<body>
+    <header class="head container" id="head">
+
+        <img class="head__logo" src="../assets/img/dos-logos.png" alt="Logo Municipalidad La Lima">
+        <nav class="head__navegacion">
+            <ul>
+                <li class="head__enlace"><a href="../index.html">Home</a></li>
+                <li class="head__enlace"><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    <section class="llamada container">
+        <h1 class="llamada__titulo">Municipalidad de La Lima</h1>
+        <p class="llamada__texto">Albergues: Gimnasio Municipal, CEB. Manuel Bonilla y CEB. Gabriela Mistral </p>
+        <!--<a class="llamada__boton boton" href="#">Conozca los planes</a>-->
+    </section>
+
+    <section class="bitacora" id="bitacora">
+
+    <h1 class="bitacora-titulo">Listado de personas albergadas</h1>
+
+    <label for="filtro">Búsqueda por uno ó dos criterios:</label>
+    <input type="text" id="filtro1" placeholder="Filtrar por primer criterio">
+    <input type="text" id="filtro2" placeholder="Filtrar por segundo criterio">
+
+    <div class="total">
+        <p>REGISTROS: <span id="total-registros">0</span></p>
+    </div>
+
+    <table id="tabla-bitacora" border="1">
+        <thead>
+            <tr>
+                <th>Cod. Familia</th>
+                <th>Nombre</th>
+                <th>DNI</th>
+                <th>Teléfono Móvil</th>
+                <th>Fecha Nac.</th>
+                <th>Edad</th>
+                <th>Etapa</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+
+    </section>  
+
+    <footer class="footer container" id="footer">
+        <img src="../assets/img/logo-blanco.png" alt="Logo Municipalidad" class="footer__logo">
+        <ul class="footer__social">
+            <li><a href="#" class="footer__midia"><img src="../assets/img/facebook.png" alt="Ícono de Facebook"></a></li>
+            <li><a href="#" class="footer__midia"><img src="../assets/img/wsp-bl2.png" alt="Ícono de Instagram"></a></li>
+            <li><a href="#" class="footer__midia"><img src="../assets/img/correo.png" alt="Ícono de Twitter"></a></li>
+        <nav>
+            <ul class="footer__navegacion">
+                <li class="head__enlace"><a href="../index.html">Home</a></li>
+                <li class="head__enlace"><a href="#head">Inicio</a></li>
+            </ul>
+        </nav>
+    </footer>
+    </main>
+    <script src="../assets/js/bitacora.js"></script>
+</body>
+</html>

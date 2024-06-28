@@ -1,0 +1,184 @@
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.bitacora {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente los elementos dentro de la sección */
+}
+
+/* la tabla */
+
+.bitacora-titulo {
+    color: var(--fuente-ceniza-oscuro);
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    font-size: 2em;
+    /*margin: 0 0 1em;*/
+    clear:left;
+}
+
+label {
+    flex: 1; /* Expande el espacio disponible para el label */
+    text-align: left; /* Alinea el texto del label a la derecha */
+    margin-right: 10px; /* Espacio entre el label y el campo de entrada */
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 40%; /* El campo de entrada ocupará el 50% del ancho de su contenedor (la sección) */
+}
+    
+
+select {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.total {
+    color:orangered;
+    font-size: 0.5rem;
+    font-family:'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2em;
+    /*margin: 0 0 1em;*/
+    clear:left;  
+}
+
+/* Estilos para la tabla */
+#tabla-bitacora {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tabla-bitacora th, #tabla-bitacora td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-bitacora th {
+    background-color:black;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr td:nth-child(1) {
+    color: white;
+    background-color:orangered; /* Establece el color de fondo para la primera celda de cada fila */
+}
+
+tbody tr td:nth-child(2) {
+    background-color:darkgrey; /* Establece el color de fondo para la segunda celda de cada fila */
+    font-weight: bold;
+}
+
+tbody tr td:nth-child(3) {
+    background-color:darkgrey;
+}
+
+tbody tr td:nth-child(4) {
+    background-color:darkgrey;
+}
+
+tbody tr td:nth-child(5) {
+    background-color:darkgrey;
+}
+
+tbody tr td:nth-child(6) {
+    background-color:darkgrey; 
+}
+
+tbody tr td:nth-child(7) {
+    color:darkslategrey;
+    background-color:darkgrey;
+    font-weight: bold; 
+}
+
+tbody tr td:nth-child(8) {
+    background-color:darkgrey; 
+}
+
+tbody tr td:nth-child(9) {
+    background-color:darkgrey; 
+}
+
+tbody tr td:nth-child(10) {
+    background-color:darkgrey; 
+}
+
+/* Código botón ARRIBA */
+
+.container-boton-arriba{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton-arriba:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton-arriba{
+    margin-bottom: 15px;
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
+/* Estilos para hacer la tabla responsive con CSS Grid */
+@media (max-width: 1024px) {
+    #tabla-bitacora {
+        display: block;
+        overflow-x: auto;
+    }
+
+    input[type="text"] {
+        width: 75%; /* El campo de entrada ocupará el 50% del ancho de su contenedor (la sección) */
+    }
+
+    #tabla-bitacora thead {
+        display: none;
+    }
+
+    #tabla-bitacora tbody, #tabla-bitacora tr, #tabla-bitacora td {
+        display: block;
+        width: 100%;
+    }
+
+    #tabla-bitacora td {
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding: 8px;
+        margin-bottom: 5px;
+    }
+}
+
