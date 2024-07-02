@@ -45,6 +45,7 @@ select {
     color:orangered;
     font-size: 0.5rem;
     font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1rem;
@@ -64,7 +65,7 @@ select {
 #tabla-bitacora th, #tabla-bitacora td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align:center; /*left*/
 }
 
 #tabla-bitacora th {
@@ -119,7 +120,23 @@ tbody tr td:nth-child(10) {
 
 /* Código botón ARRIBA */
 
-.container-boton-arriba{
+/*#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto
+}
+#scroll-to-top.show {
+    display: block; /* Mostrar cuando se aplica la clase show
+}
+*/
+/*.container-boton-arriba{
     background-color: #2e6329;
     border: 1px solid #fff;
     position: fixed;
@@ -142,6 +159,7 @@ tbody tr td:nth-child(10) {
     width: 80px;
     transition: ease 1s;
 }
+*/
 
 @keyframes efecto{
     0%{

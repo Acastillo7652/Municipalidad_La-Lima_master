@@ -6,7 +6,7 @@
     color:yellow;
     text-align: center;
     
-    background-color:teal;
+    background-color:#008080;
 
     padding-top: 13rem; /* 16.25rem */
     padding-bottom: 1.5rem;
@@ -14,7 +14,7 @@
 
 .llamada__titulo {
     font-family: var(--montserrat);
-    color:turquoise;
+    color:#40e0d0;
     font-size: 2.25rem;
     font-weight: 700;
     text-transform: uppercase;
