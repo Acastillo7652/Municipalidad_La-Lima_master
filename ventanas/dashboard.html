@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoreo</title>
+    <link href="../assets/css/dashboard.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <img class="head__logo" src="../assets/img/3_logos_MU-CO-removebg-preview.png" alt="Logo Municipalidad La Lima">
+        <nav class="head__navegacion">
+            <ul>
+                <li class="head__enlace"><a href="../ventanas/login.html">Albergues</a></li>
+                <li class="head__enlace"><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Dashboard Monitoreo de los Ríos Chamelecón y Ulúa</h1>
+        <p id="date"></p>
+    </header>
+    <main>
+        <div class="river" id="chamelecon">
+            <h2>Río Chamelecón</h2>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="alert-container">
+                        <div id="chamelecon-chart1-alert" class="alert-box"></div>
+                        <span id="chamelecon-chart1-text" class="alert-text"></span>
+                    </div>
+                    <canvas id="chamelecon-chart1"></canvas>
+                </div>
+                <div class="metric">
+                    <div class="alert-container">
+                        <div id="chamelecon-chart2-alert" class="alert-box"></div>
+                        <span id="chamelecon-chart2-text" class="alert-text"></span>
+                    </div>
+                    <canvas id="chamelecon-chart2"></canvas>
+                </div>
+                <div class="metric">
+                    <div class="alert-container">
+                        <div id="chamelecon-chart3-alert" class="alert-box"></div>
+                        <span id="chamelecon-chart3-text" class="alert-text"></span>
+                    </div>
+                    <canvas id="chamelecon-chart3"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="river" id="ulua">
+            <h2>Río Ulúa</h2>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="alert-container">
+                        <div id="ulua-chart1-alert" class="alert-box"></div>
+                        <span id="ulua-chart1-text" class="alert-text"></span>
+                    </div>
+                    <canvas id="ulua-chart1"></canvas>
+                </div>
+                <div class="metric">
+                    <div class="alert-container">
+                        <div id="ulua-chart2-alert" class="alert-box"></div>
+                        <span id="ulua-chart2-text" class="alert-text"></span>
+                    </div>
+                    <canvas id="ulua-chart2"></canvas>
+                </div>
+                <div class="metric">
+                    <div class="alert-container">
+                        <div id="ulua-chart3-alert" class="alert-box"></div>
+                        <span id="ulua-chart3-text" class="alert-text"></span>
+                    </div>
+                    <canvas id="ulua-chart3"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>© 2024 Municipalidad de La Lima, Cortés. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>
