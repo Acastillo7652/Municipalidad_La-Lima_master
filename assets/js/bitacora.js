@@ -118,14 +118,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Código para el botón flotante
     const scrollToTopBtn = document.createElement("button");
     scrollToTopBtn.id = "scroll-to-top";
-    scrollToTopBtn.textContent = "    ˄    ";
+scrollToTopBtn.textContent = "   Ꙟ   ";
 
     // Agregar el botón al final de la sección
     const mainSection = document.getElementById("bitacora");
     mainSection.appendChild(scrollToTopBtn);
 
     // Estilos del botón flotante
-    scrollToTopBtn.style.fontSize = "22px";
+    scrollToTopBtn.style.fontSize = "25px";
     scrollToTopBtn.style.fontFamily = "Arial Black, Arial, sans-serif";
     scrollToTopBtn.style.fontWeight = "bold";
     scrollToTopBtn.style.opacity = "0.8";
