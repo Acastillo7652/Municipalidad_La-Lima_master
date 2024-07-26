@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.head__logo {
+    background: 15%;
+    margin-top: 0.15rem;
+    margin-bottom: 1rem;
+}
+
+.head__navegacion {
+    color: #04f839;
+    text-align:center;
+    padding-top: 0; /* 2.5rem */
+}
+
+.head__list {
+    margin-top: 1rem;
+}
+
+.head__enlace {
+    font-size: 1.1rem;
+
+    display: inline-block;
+
+    margin-right: .7rem;
+    margin-bottom: .7rem;
+    margin-left: .7rem;
+}
+
+.head__enlace:hover {
+	color: #f8e004;
+	font-size: 1.12rem;
+}
+
+header {
+    background-color:darkorange;
+    color: white;
+    text-align: center;
+    padding: 1em 0; /* 1em 0 */
+}
+
+h1 {
+    margin: 0;
+}
+
+#date {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.river {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+    padding: 1em;
+    width: 90%;
+}
+
+.river h2 {
+    text-align: center;
+    color: #333;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+
+.metric {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    padding: 1em;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+}
+
+.metric h3 {
+    margin: 0.5em 0;
+}
+
+footer {
+    background-color:darkorange;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position:relative; /*fixed*/
+    width: 100%;
+    bottom: 0;
+}
+
+canvas {
+    margin: 1em 0;
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* Añade estos estilos al archivo dashboard.css */
+
+.alert-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: -05px;  /* -30px */   /* Ajusta según sea necesario */
+}
+
+.alert-box {
+    width: 80px;
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #e0e0e0; /* Default color */
+}
+
+.alert-text {
+    font-size: 1em;
+    color: #333;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .metric {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .metric {
+        width: 90%;
+    }
+}
