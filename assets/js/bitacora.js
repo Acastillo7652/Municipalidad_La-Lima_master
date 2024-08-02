@@ -118,14 +118,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Código para el botón flotante
     const scrollToTopBtn = document.createElement("button");
     scrollToTopBtn.id = "scroll-to-top";
-scrollToTopBtn.textContent = "   Ꙟ   ";
+scrollToTopBtn.textContent = " ↑ ";
 
     // Agregar el botón al final de la sección
     const mainSection = document.getElementById("bitacora");
     mainSection.appendChild(scrollToTopBtn);
 
     // Estilos del botón flotante
-    scrollToTopBtn.style.fontSize = "25px";
+    scrollToTopBtn.style.fontSize = "23px";
     scrollToTopBtn.style.fontFamily = "Arial Black, Arial, sans-serif";
     scrollToTopBtn.style.fontWeight = "bold";
     scrollToTopBtn.style.opacity = "0.8";
@@ -137,7 +137,7 @@ scrollToTopBtn.textContent = "   Ꙟ   ";
     scrollToTopBtn.style.backgroundColor = "#40e0d0";
     scrollToTopBtn.style.color = "#FF6600";
     scrollToTopBtn.style.border = "none";
-    scrollToTopBtn.style.borderRadius = "20px";
+    scrollToTopBtn.style.borderRadius = "40px";
     scrollToTopBtn.style.cursor = "pointer";
     scrollToTopBtn.style.display = "none"; // Inicialmente oculto
 
@@ -147,7 +147,7 @@ scrollToTopBtn.textContent = "   Ꙟ   ";
 
     window.addEventListener("scroll", function() {
         const sectionRect = mainSection.getBoundingClientRect();
-        const footer = document.querySelector("footer"); // Cambia esto si tu footer tiene un ID diferente
+        const footer = document.querySelector("footer"); // Cambiar esto si el footer tiene un ID diferente
         const footerRect = footer.getBoundingClientRect();
 
         if (window.scrollY > 600 && sectionRect.bottom > window.innerHeight) {
